@@ -24,51 +24,51 @@ def highest_budget(wanted_data):
 
 
 def compute_profit(wanted_data):
-    wanted_data['profit_musd'] = df['revenue_musd_num'] - df['budget_musd_num']
-    return df
+    wanted_data['profit_musd'] = wanted_data['revenue_musd_num'] - wanted_data['budget_musd_num']
+    return wanted_data
 
 
-def highest_profit(df):
-    idx = df['profit_musd'].idxmax()
-    return df.loc[idx][['title', 'profit_musd']]
+def highest_profit(wanted_data):
+    idx = wanted_data['profit_musd'].idxmax()
+    return wanted_data.loc[idx][['title', 'profit_musd']]
 
 
-def lowest_profit(df):
-    idx = df['profit_musd'].idxmin()
-    return df.loc[idx][['title', 'profit_musd']]
+def lowest_profit(wanted_data):
+    idx = wanted_data['profit_musd'].idxmin()
+    return wanted_data.loc[idx][['title', 'profit_musd']]
 
 
-def highest_roi(df):
-    df['roi'] = df['revenue_musd_num'] / df['budget_musd_num']
-    filtered = df[df['budget_musd_num'] >= 10]
+def highest_roi(wanted_data):
+    wanted_data['roi'] = wanted_data['revenue_musd_num'] / wanted_data['budget_musd_num']
+    filtered = wanted_data[wanted_data['budget_musd_num'] >= 10]
     idx = filtered['roi'].idxmax()
-    return df.loc[idx][['title', 'roi']]
+    return wanted_data.loc[idx][['title', 'roi']]
 
 
-def lowest_roi(df):
-    df['roi'] = df['revenue_musd_num'] / df['budget_musd_num']
-    filtered = df[df['budget_musd_num'] >= 10]
+def lowest_roi(wanted_data):
+    wanted_data['roi'] = wanted_data['revenue_musd_num'] / wanted_data['budget_musd_num']
+    filtered = wanted_data[wanted_data['budget_musd_num'] >= 10]
     idx = filtered['roi'].idxmin()
-    return df.loc[idx][['title', 'roi']]
+    return wanted_data.loc[idx][['title', 'roi']]
 
 
-def most_voted(df):
-    idx = df['vote_count'].idxmax()
-    return df.loc[idx][['title', 'vote_count']]
+def most_voted(wanted_data):
+    idx = wanted_data['vote_count'].idxmax()
+    return wanted_data.loc[idx][['title', 'vote_count']]
 
 
-def highest_rated(df):
-    filtered = df[df['vote_count'] >= 10]
+def highest_rated(wanted_data):
+    filtered = wanted_data[wanted_data['vote_count'] >= 10]
     idx = filtered['vote_average'].idxmax()
-    return df.loc[idx][['title', 'vote_average']]
+    return wanted_data.loc[idx][['title', 'vote_average']]
 
 
-def lowest_rated(df):
-    filtered = df[df['vote_count'] >= 10]
+def lowest_rated(wanted_data):
+    filtered = wanted_data[wanted_data['vote_count'] >= 10]
     idx = filtered['vote_average'].idxmin()
-    return df.loc[idx][['title', 'vote_average']]
+    return wanted_data.loc[idx][['title', 'vote_average']]
 
 
-def most_popular(df):
-    idx = df['popularity'].idxmax()
-    return df.loc[idx][['title', 'popularity']]
+def most_popular(wanted_data):
+    idx = wanted_data['popularity'].idxmax()
+    return wanted_data.loc[idx][['title', 'popularity']]

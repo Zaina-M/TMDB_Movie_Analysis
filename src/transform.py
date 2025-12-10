@@ -26,7 +26,7 @@ def transform_movies(wanted_movies):
 
     #  Drop unnecessary columns 
     drop_cols = ['adult', 'imdb_id', 'original_title', 'video', 'homepage']
-    wanted_data = wanted_data.drop(columns=[c for c in drop_cols if c in wanted_data.columns])
+    wanted_data = wanted_data.drop(columns=[col for col in drop_cols if col in wanted_data.columns])
 
     #  Flatten JSON fields 
     json_columns = ['belongs_to_collection', 'genres', 'production_companies', 'spoken_languages', 'production_countries']

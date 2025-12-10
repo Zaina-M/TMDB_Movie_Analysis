@@ -169,4 +169,4 @@ It serves as a complete workflow for **data extraction → transformation
 
 ### **Prerequisites:**
 ```bash
-pip install requests pandas numpy python-dotenv matplotlib
+pip install requests pandas  python-dotenv matplotlib

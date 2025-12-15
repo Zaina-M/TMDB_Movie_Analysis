@@ -38,7 +38,7 @@ def transform_movies(wanted_movies):
                 wanted_data[col] = wanted_data[col].apply(lambda x: "|".join([item['name'] for item in x]) if isinstance(x, list) else None)
 
     # Convert numeric columns
-    numeric_cols = ["budget", "revenue", "id", "popularity", "vote_count", "vote_average", "runtime"]
+    numeric_cols = ["budget", "revenue", "id", "popularity"]
     for col in numeric_cols:
         if col in wanted_data.columns:
             wanted_data[col] = pd.to_numeric(wanted_data[col], errors='coerce').fillna(0).astype(int)

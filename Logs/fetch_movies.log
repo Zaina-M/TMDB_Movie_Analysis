@@ -1,0 +1,63 @@
+2026-01-08 16:40:26,703 | WARNING | tmdb_fetcher | Skipping invalid movie_id: 0
+2026-01-08 16:40:27,722 | INFO | tmdb_fetcher | Successfully fetched movie_id=299534
+2026-01-08 16:40:28,258 | INFO | tmdb_fetcher | Successfully fetched movie_id=19995
+2026-01-08 16:40:28,752 | INFO | tmdb_fetcher | Successfully fetched movie_id=140607
+2026-01-08 16:40:29,265 | INFO | tmdb_fetcher | Successfully fetched movie_id=299536
+2026-01-08 16:40:29,760 | INFO | tmdb_fetcher | Successfully fetched movie_id=597
+2026-01-08 16:40:30,383 | INFO | tmdb_fetcher | Successfully fetched movie_id=135397
+2026-01-08 16:40:30,836 | INFO | tmdb_fetcher | Successfully fetched movie_id=420818
+2026-01-08 16:40:31,333 | INFO | tmdb_fetcher | Successfully fetched movie_id=24428
+2026-01-08 16:40:31,806 | INFO | tmdb_fetcher | Successfully fetched movie_id=168259
+2026-01-08 16:40:32,346 | INFO | tmdb_fetcher | Successfully fetched movie_id=99861
+2026-01-08 16:40:32,849 | INFO | tmdb_fetcher | Successfully fetched movie_id=284054
+2026-01-08 16:40:33,458 | INFO | tmdb_fetcher | Successfully fetched movie_id=12445
+2026-01-08 16:40:33,943 | INFO | tmdb_fetcher | Successfully fetched movie_id=181808
+2026-01-08 16:40:34,412 | INFO | tmdb_fetcher | Successfully fetched movie_id=330457
+2026-01-08 16:40:34,902 | INFO | tmdb_fetcher | Successfully fetched movie_id=351286
+2026-01-08 16:40:35,355 | INFO | tmdb_fetcher | Successfully fetched movie_id=109445
+2026-01-08 16:40:35,843 | INFO | tmdb_fetcher | Successfully fetched movie_id=321612
+2026-01-08 16:40:36,329 | INFO | tmdb_fetcher | Successfully fetched movie_id=260513
+2026-01-08 16:40:36,531 | INFO | tmdb_fetcher | Fetch completed | requested=19 successful=18
+2026-01-08 16:40:36,539 | INFO | tmdb_fetcher | Movie data saved to movies_raw.csv
+2026-01-08 16:41:55,563 | WARNING | tmdb_fetcher | Skipping invalid movie_id: 0
+2026-01-08 16:41:56,608 | INFO | tmdb_fetcher | Successfully fetched movie_id=299534
+2026-01-08 16:41:57,014 | INFO | tmdb_fetcher | Successfully fetched movie_id=19995
+2026-01-08 16:41:57,386 | INFO | tmdb_fetcher | Successfully fetched movie_id=140607
+2026-01-08 16:41:57,777 | INFO | tmdb_fetcher | Successfully fetched movie_id=299536
+2026-01-08 16:41:58,145 | INFO | tmdb_fetcher | Successfully fetched movie_id=597
+2026-01-08 16:41:58,513 | INFO | tmdb_fetcher | Successfully fetched movie_id=135397
+2026-01-08 16:41:58,888 | INFO | tmdb_fetcher | Successfully fetched movie_id=420818
+2026-01-08 16:41:59,270 | INFO | tmdb_fetcher | Successfully fetched movie_id=24428
+2026-01-08 16:41:59,637 | INFO | tmdb_fetcher | Successfully fetched movie_id=168259
+2026-01-08 16:42:00,025 | INFO | tmdb_fetcher | Successfully fetched movie_id=99861
+2026-01-08 16:42:00,407 | INFO | tmdb_fetcher | Successfully fetched movie_id=284054
+2026-01-08 16:42:00,760 | INFO | tmdb_fetcher | Successfully fetched movie_id=12445
+2026-01-08 16:42:01,120 | INFO | tmdb_fetcher | Successfully fetched movie_id=181808
+2026-01-08 16:42:01,470 | INFO | tmdb_fetcher | Successfully fetched movie_id=330457
+2026-01-08 16:42:01,831 | INFO | tmdb_fetcher | Successfully fetched movie_id=351286
+2026-01-08 16:42:02,183 | INFO | tmdb_fetcher | Successfully fetched movie_id=109445
+2026-01-08 16:42:02,541 | INFO | tmdb_fetcher | Successfully fetched movie_id=321612
+2026-01-08 16:42:02,898 | INFO | tmdb_fetcher | Successfully fetched movie_id=260513
+2026-01-08 16:42:03,104 | INFO | tmdb_fetcher | Fetch completed | requested=19 successful=18
+2026-01-08 16:42:03,110 | INFO | tmdb_fetcher | Movie data saved to movies_raw.csv
+2026-01-08 16:46:49,423 | WARNING | tmdb_fetcher | Skipping invalid movie_id: 0
+2026-01-08 16:46:50,227 | INFO | tmdb_fetcher | Successfully fetched movie_id=299534
+2026-01-08 16:46:50,588 | INFO | tmdb_fetcher | Successfully fetched movie_id=19995
+2026-01-08 16:46:50,934 | INFO | tmdb_fetcher | Successfully fetched movie_id=140607
+2026-01-08 16:46:51,300 | INFO | tmdb_fetcher | Successfully fetched movie_id=299536
+2026-01-08 16:46:51,640 | INFO | tmdb_fetcher | Successfully fetched movie_id=597
+2026-01-08 16:46:51,980 | INFO | tmdb_fetcher | Successfully fetched movie_id=135397
+2026-01-08 16:46:52,294 | INFO | tmdb_fetcher | Successfully fetched movie_id=420818
+2026-01-08 16:46:52,657 | INFO | tmdb_fetcher | Successfully fetched movie_id=24428
+2026-01-08 16:46:52,990 | INFO | tmdb_fetcher | Successfully fetched movie_id=168259
+2026-01-08 16:46:53,332 | INFO | tmdb_fetcher | Successfully fetched movie_id=99861
+2026-01-08 16:46:53,692 | INFO | tmdb_fetcher | Successfully fetched movie_id=284054
+2026-01-08 16:46:54,028 | INFO | tmdb_fetcher | Successfully fetched movie_id=12445
+2026-01-08 16:46:54,369 | INFO | tmdb_fetcher | Successfully fetched movie_id=181808
+2026-01-08 16:46:54,693 | INFO | tmdb_fetcher | Successfully fetched movie_id=330457
+2026-01-08 16:46:55,160 | INFO | tmdb_fetcher | Successfully fetched movie_id=351286
+2026-01-08 16:46:55,483 | INFO | tmdb_fetcher | Successfully fetched movie_id=109445
+2026-01-08 16:46:55,808 | INFO | tmdb_fetcher | Successfully fetched movie_id=321612
+2026-01-08 16:46:56,144 | INFO | tmdb_fetcher | Successfully fetched movie_id=260513
+2026-01-08 16:46:56,359 | INFO | tmdb_fetcher | Fetch completed | requested=19 successful=18
+2026-01-08 16:46:56,366 | INFO | tmdb_fetcher | Movie data saved to movies_raw.csv

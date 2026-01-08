@@ -1,0 +1,11 @@
+2026-01-08 16:59:00,259 | INFO | movie_transformer | Loaded 18 movies from movies_raw.csv
+2026-01-08 16:59:00,261 | INFO | movie_transformer | Starting movie transformation
+2026-01-08 16:59:00,261 | INFO | movie_transformer | Initial rows: 18
+2026-01-08 16:59:00,262 | WARNING | movie_transformer | Credits column not found
+2026-01-08 16:59:00,262 | INFO | movie_transformer | Dropped columns: []
+2026-01-08 16:59:00,262 | INFO | movie_transformer | Converted numeric columns: ['budget', 'revenue', 'id', 'popularity']
+2026-01-08 16:59:00,264 | INFO | movie_transformer | Converted release_date to datetime
+2026-01-08 16:59:00,271 | INFO | movie_transformer | Formatting budget to USD millions
+2026-01-08 16:59:00,271 | INFO | movie_transformer | Formatting revenue to USD millions
+2026-01-08 16:59:00,271 | INFO | movie_transformer | Transformation completed | final rows: 18
+2026-01-08 16:59:00,278 | INFO | movie_transformer | Transformed data saved to movies_transformed.csv

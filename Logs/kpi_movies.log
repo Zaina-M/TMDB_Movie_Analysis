@@ -1,0 +1,22 @@
+2026-01-08 17:08:52,428 | INFO | movie_kpis | Loaded 18 movies from movies_transformed.csv
+2026-01-08 17:08:52,428 | INFO | movie_kpis | Computing all KPIs for 18 movies
+2026-01-08 17:08:52,428 | INFO | movie_kpis | Computing KPI: Highest Revenue
+2026-01-08 17:08:52,430 | ERROR | movie_kpis | Missing columns for KPI 'Highest Revenue': ['revenue_musd_num']
+2026-01-08 17:08:52,430 | ERROR | movie_kpis | Failed to compute KPI 'Highest Revenue': Missing columns: ['revenue_musd_num']
+2026-01-08 17:08:52,430 | INFO | movie_kpis | Computing KPI: Highest Budget
+2026-01-08 17:08:52,430 | ERROR | movie_kpis | Missing columns for KPI 'Highest Budget': ['budget_musd_num']
+2026-01-08 17:08:52,430 | ERROR | movie_kpis | Failed to compute KPI 'Highest Budget': Missing columns: ['budget_musd_num']
+2026-01-08 17:08:52,430 | INFO | movie_kpis | Computing KPI: Highest Profit
+2026-01-08 17:08:52,430 | ERROR | movie_kpis | Missing columns for KPI 'Highest Profit': ['profit_musd']
+2026-01-08 17:08:52,430 | ERROR | movie_kpis | Failed to compute KPI 'Highest Profit': Missing columns: ['profit_musd']
+2026-01-08 17:08:52,430 | INFO | movie_kpis | Computing KPI: Lowest Profit
+2026-01-08 17:08:52,430 | ERROR | movie_kpis | Missing columns for KPI 'Lowest Profit': ['profit_musd']
+2026-01-08 17:08:52,430 | ERROR | movie_kpis | Failed to compute KPI 'Lowest Profit': Missing columns: ['profit_musd']
+2026-01-08 17:08:52,547 | INFO | movie_kpis | Computing KPI: Most Voted
+2026-01-08 17:08:52,552 | INFO | movie_kpis | KPI 'Most Voted' result: The Avengers (34876)
+2026-01-08 17:08:52,560 | INFO | movie_kpis | Applied filter: vote_count >= 10 (remaining rows: 18)
+2026-01-08 17:08:52,573 | INFO | movie_kpis | Applied filter: vote_count >= 10 (remaining rows: 18)
+2026-01-08 17:08:52,577 | INFO | movie_kpis | Computing KPI: Most Popular
+2026-01-08 17:08:52,581 | INFO | movie_kpis | KPI 'Most Popular' result: Avatar (96.5148)
+2026-01-08 17:08:52,585 | INFO | movie_kpis | Computed 4 KPIs successfully
+2026-01-08 17:08:52,590 | INFO | movie_kpis | KPI results saved to movie_kpis.csv

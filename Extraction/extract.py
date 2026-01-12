@@ -1,6 +1,7 @@
 import os
 import time
 import logging
+import json
 from typing import List, Dict, Optional
 
 import requests
@@ -110,6 +111,9 @@ def fetch_movie(
         return {
             "movie_id": data.get("id"),
             "title": data.get("title"),
+            "tagline": data.get("tagline"),
+            "overview": data.get("overview"),
+            "poster_path": data.get("poster_path"),
             "release_date": data.get("release_date"),
             "runtime": data.get("runtime"),
             "budget": data.get("budget"),
@@ -117,7 +121,13 @@ def fetch_movie(
             "popularity": data.get("popularity"),
             "vote_average": data.get("vote_average"),
             "vote_count": data.get("vote_count"),
-            "original_language": data.get("original_language")
+            "original_language": data.get("original_language"),
+            "belongs_to_collection": data.get("belongs_to_collection"),
+            "genres": data.get("genres"),
+            "production_companies": data.get("production_companies"),
+            "production_countries": data.get("production_countries"),
+            "spoken_languages": data.get("spoken_languages"),
+            "credits": data.get("credits")
         }
 
     except requests.exceptions.Timeout:
@@ -135,7 +145,8 @@ def fetch_movie(
 # -------------------------
 def fetch_movies(movie_ids: List[int]) -> pd.DataFrame:
     """
-    Fetch multiple movies and return as Pandas DataFrame.
+    Fetch multiple movies (including full credits)
+    and return as Pandas DataFrame.
     """
     session = create_session()
     results = []
@@ -145,7 +156,6 @@ def fetch_movies(movie_ids: List[int]) -> pd.DataFrame:
         if movie:
             results.append(movie)
 
-        # Gentle rate limiting (production-friendly)
         time.sleep(0.2)
 
     wanted_movie = pd.DataFrame(results)
@@ -156,6 +166,8 @@ def fetch_movies(movie_ids: List[int]) -> pd.DataFrame:
     )
 
     return wanted_movie
+
+
 # -------------------------
 # Main Execution
 # -------------------------
@@ -163,6 +175,6 @@ if __name__ == "__main__":
     df_movies = fetch_movies(MOVIE_IDS)
 
     # Example: persist downstream
-    df_movies.to_csv("movies_raw.csv", index=False)
+    df_movies.to_json("movies_raw.json", orient="records", indent=4)
 
-    logger.info("Movie data saved to movies_raw.csv")
+    logger.info("Movie data saved to movies_raw.json")

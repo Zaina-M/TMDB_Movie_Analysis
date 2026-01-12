@@ -181,10 +181,5 @@ if __name__ == "__main__":
         kpi_results.to_csv("movie_kpis.csv", index=False)
         logger.info("KPI results saved to movie_kpis.csv")
         
-        # Display results
-        print("\nMovie KPI Results:")
-        print("=" * 50)
-        for _, row in kpi_results.iterrows():
-            print(f"{row['KPI']}: {row['Movie']} ({row['Value']})")
     else:
         logger.error("No KPI results to save")

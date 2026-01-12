@@ -1,11 +1,13 @@
-2026-01-08 16:59:00,259 | INFO | movie_transformer | Loaded 18 movies from movies_raw.csv
-2026-01-08 16:59:00,261 | INFO | movie_transformer | Starting movie transformation
-2026-01-08 16:59:00,261 | INFO | movie_transformer | Initial rows: 18
-2026-01-08 16:59:00,262 | WARNING | movie_transformer | Credits column not found
-2026-01-08 16:59:00,262 | INFO | movie_transformer | Dropped columns: []
-2026-01-08 16:59:00,262 | INFO | movie_transformer | Converted numeric columns: ['budget', 'revenue', 'id', 'popularity']
-2026-01-08 16:59:00,264 | INFO | movie_transformer | Converted release_date to datetime
-2026-01-08 16:59:00,271 | INFO | movie_transformer | Formatting budget to USD millions
-2026-01-08 16:59:00,271 | INFO | movie_transformer | Formatting revenue to USD millions
-2026-01-08 16:59:00,271 | INFO | movie_transformer | Transformation completed | final rows: 18
-2026-01-08 16:59:00,278 | INFO | movie_transformer | Transformed data saved to movies_transformed.csv
+2026-01-12 15:13:22,210 | INFO | movie_transformer | Loaded 18 raw movies
+2026-01-12 15:13:22,210 | INFO | movie_transformer | Starting movie transformation
+2026-01-12 15:13:22,211 | INFO | movie_transformer | Initial rows: 18
+2026-01-12 15:13:22,211 | INFO | movie_transformer | Extracting credits data
+2026-01-12 15:13:22,216 | INFO | movie_transformer | Flattening column: belongs_to_collection
+2026-01-12 15:13:22,217 | INFO | movie_transformer | Flattening column: genres
+2026-01-12 15:13:22,217 | INFO | movie_transformer | Flattening column: production_companies
+2026-01-12 15:13:22,217 | INFO | movie_transformer | Flattening column: production_countries
+2026-01-12 15:13:22,222 | INFO | movie_transformer | Flattening column: spoken_languages
+2026-01-12 15:13:22,223 | INFO | movie_transformer | Dropped columns: ['credits']
+2026-01-12 15:13:22,233 | INFO | movie_transformer | Transformation complete | final rows: 18
+2026-01-12 15:13:22,233 | INFO | movie_transformer | Final columns: ['title', 'tagline', 'release_date', 'genres', 'belongs_to_collection', 'original_language', 'budget_musd', 'revenue_musd', 'budget_musd_num', 'revenue_musd_num', 'profit_musd', 'roi', 'production_companies', 'production_countries', 'vote_count', 'vote_average', 'popularity', 'runtime', 'overview', 'spoken_languages', 'poster_path', 'cast', 'cast_size', 'director', 'crew_size']
+2026-01-12 15:13:22,239 | INFO | movie_transformer | Saved movies_transformed.csv

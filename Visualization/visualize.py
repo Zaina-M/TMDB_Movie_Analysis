@@ -363,10 +363,10 @@ def plot_franchise_vs_standalone(df: pd.DataFrame):
 
     # Define colors for each metric
     metric_colors = {
-        "avg_revenue": ["skyblue", "salmon"],
-        "avg_roi": ["lightgreen", "violet"],
-        "avg_rating": ["gold", "orange"],
-        "avg_popularity": ["cyan", "magenta"]
+        "avg_revenue": ["skyblue", "orange"],
+        "avg_roi": ["skyblue", "orange"],
+        "avg_rating": ["skyblue", "orange"],
+        "avg_popularity": ["skyblue", "orange"]
     }
 
     fig, axes = plt.subplots(2, 2, figsize=(14, 10))

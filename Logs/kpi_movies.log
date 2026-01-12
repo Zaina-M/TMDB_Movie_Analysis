@@ -78,3 +78,23 @@
 2026-01-12 17:23:22,178 | INFO | movie_kpis | Computed 10 KPIs successfully
 2026-01-12 17:23:25,703 | INFO | movie_kpis | Computing KPI: Highest Revenue
 2026-01-12 17:23:25,705 | INFO | movie_kpis | KPI 'Highest Revenue' result: Avatar (2923.706026)
+2026-01-12 17:31:15,744 | INFO | movie_kpis | Computing all KPIs for 18 movies
+2026-01-12 17:31:15,744 | INFO | movie_kpis | Computing KPI: Highest Revenue
+2026-01-12 17:31:15,746 | INFO | movie_kpis | KPI 'Highest Revenue' result: Avatar (2923.706026)
+2026-01-12 17:31:15,748 | INFO | movie_kpis | Computing KPI: Highest Budget
+2026-01-12 17:31:15,748 | INFO | movie_kpis | KPI 'Highest Budget' result: Avengers: Endgame (356.0)
+2026-01-12 17:31:15,748 | INFO | movie_kpis | Computing KPI: Highest Profit
+2026-01-12 17:31:15,751 | INFO | movie_kpis | KPI 'Highest Profit' result: Avatar (2686.706026)
+2026-01-12 17:31:15,751 | INFO | movie_kpis | Computing KPI: Lowest Profit
+2026-01-12 17:31:15,751 | INFO | movie_kpis | KPI 'Lowest Profit' result: Star Wars: The Last Jedi (1032.69883)
+2026-01-12 17:31:16,183 | INFO | movie_kpis | Applied filter: budget_musd_num >= 10 (remaining rows: 18)
+2026-01-12 17:31:16,189 | INFO | movie_kpis | Applied filter: budget_musd_num >= 10 (remaining rows: 18)
+2026-01-12 17:31:16,195 | INFO | movie_kpis | Computing KPI: Most Voted
+2026-01-12 17:31:16,197 | INFO | movie_kpis | KPI 'Most Voted' result: The Avengers (34997)
+2026-01-12 17:31:16,200 | INFO | movie_kpis | Applied filter: vote_count >= 10 (remaining rows: 18)
+2026-01-12 17:31:16,206 | INFO | movie_kpis | Applied filter: vote_count >= 10 (remaining rows: 18)
+2026-01-12 17:31:16,210 | INFO | movie_kpis | Computing KPI: Most Popular
+2026-01-12 17:31:16,213 | INFO | movie_kpis | KPI 'Most Popular' result: Avatar (78.4923)
+2026-01-12 17:31:16,213 | INFO | movie_kpis | Computed 10 KPIs successfully
+2026-01-12 17:31:16,236 | INFO | movie_kpis | Computing KPI: Highest Revenue
+2026-01-12 17:31:16,239 | INFO | movie_kpis | KPI 'Highest Revenue' result: Avatar (2923.706026)

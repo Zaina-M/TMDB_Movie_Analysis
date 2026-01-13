@@ -9,10 +9,11 @@ import pandas as pd
 from dotenv import load_dotenv
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from Config.paths import RAW_JSON,FETCH_LOG
 
-# -------------------------
+
 # Environment & Config
-# -------------------------
+
 load_dotenv()
 
 
@@ -34,28 +35,34 @@ MAX_RETRIES = 3
 RETRY_BACKOFF = 1.5  # exponential backoff base
 
 
-# -------------------------
-# Logging (FILE ONLY)
-# -------------------------
+
+# Logging (to file)
+
 LOG_DIR = "logs"
 os.makedirs(LOG_DIR, exist_ok=True)
 
+# logging.basicConfig(
+#     filename=os.path.join(LOG_DIR, "fetch_movies.log"),
+#     level=logging.INFO,
+#     format="%(asctime)s | %(levelname)s | %(name)s | %(message)s"
+# )
+
+# logger = logging.getLogger("tmdb_fetcher")
+
 logging.basicConfig(
-    filename=os.path.join(LOG_DIR, "fetch_movies.log"),
+    filename=FETCH_LOG,
     level=logging.INFO,
-    format="%(asctime)s | %(levelname)s | %(name)s | %(message)s"
+    format="%(asctime)s | %(levelname)s | %(message)s"
 )
 
 logger = logging.getLogger("tmdb_fetcher")
 
-
-# -------------------------
 # HTTP Session with Retries
-# -------------------------
+
 def create_session() -> requests.Session:
-    """
-    Create a requests session with retry strategy.
-    """
+    
+    #Create a requests session with retry strategy.
+    
     retry_strategy = Retry(
         total=MAX_RETRIES,
         status_forcelist=[429, 500, 502, 503, 504],
@@ -73,17 +80,16 @@ def create_session() -> requests.Session:
     return session
 
 
-# -------------------------
+
 # Fetch Single Movie
-# -------------------------
+
 def fetch_movie(
     session: requests.Session,
     movie_id: int
 ) -> Optional[Dict]:
-    """
-    Fetch a single movie from TMDb.
-    Returns None for invalid or failed IDs.
-    """
+    
+    #Fetch a single movie from TMDb. Returns None for invalid or failed IDs.
+  
     if movie_id <= 0:
         logger.warning(f"Skipping invalid movie_id: {movie_id}")
         return None
@@ -140,14 +146,13 @@ def fetch_movie(
     return None
 
 
-# -------------------------
+
 # Fetch All Movies
-# -------------------------
+
 def fetch_movies(movie_ids: List[int]) -> pd.DataFrame:
-    """
-    Fetch multiple movies (including full credits)
-    and return as Pandas DataFrame.
-    """
+    
+    #Fetch multiple movies (including full credits)and return as Pandas DataFrame.
+    
     session = create_session()
     results = []
 
@@ -168,13 +173,15 @@ def fetch_movies(movie_ids: List[int]) -> pd.DataFrame:
     return wanted_movie
 
 
-# -------------------------
+
 # Main Execution
-# -------------------------
+
 if __name__ == "__main__":
     df_movies = fetch_movies(MOVIE_IDS)
 
     # Example: persist downstream
-    df_movies.to_json("movies_raw.json", orient="records", indent=4)
+    # df_movies.to_json("movies_raw.json", orient="records", indent=4)
 
-    logger.info("Movie data saved to movies_raw.json")
+    # logger.info("Movie data saved to movies_raw.json")
+    df_movies.to_json(RAW_JSON, orient="records", indent=4)
+logger.info(f"Movie data saved to {RAW_JSON}")

@@ -6,13 +6,36 @@ This project analyzes a curated selection of popular movies using data from The 
 ---
 ## Project Structure
 
-    project/
-    │── src/
-    │   ├── extract.py
+    TMDB_Movie_Analysis/
+    │
+    ├── data/
+    │   ├──movies_raw.json 
+    │   │   
+    │   │
+    │   ├── movie_kpis.csv
+    │   │ 
+    │   │
+    │   └── movies_transformed.csv
+    │       
+    │
+    ├── Extraction/
+    │   └── extract.py
+    │
+    ├── Transformation/
     │   └── transform.py
-    │── movie_analysis.ipynb
-    │── README.md
-    │── requirements.txt
+    │
+    ├── KPI/
+    │   └── kpis.py
+    │
+    ├── visualization/
+    │   └── visualize.py
+    │
+    ├── notebooks/
+    │   └── movie_analysis.ipynb
+    │
+    ├── main.py
+    ├── requirements.txt
+    └── README.md
 
 ##  Approach & Methodology
 
@@ -167,6 +190,28 @@ It serves as a complete workflow for **data extraction → transformation
 
 ## Setup & Usage
 
-### **Prerequisites:**
-```bash
-pip install requests pandas  python-dotenv matplotlib
+## Running the Project
+
+### Install Dependencies
+
+``` bash
+pip install -r requirements.txt
+```
+
+### Run Full Pipeline
+
+``` bash
+python main.py
+```
+
+------------------------------------------------------------------------
+
+## Tools & Technologies
+
+-   Python
+-   Pandas
+-   Requests
+-   Matplotlib
+-   TMDb API
+
+------------------------------------------------------------------------

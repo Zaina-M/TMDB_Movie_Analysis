@@ -1,12 +1,13 @@
 import logging
 import pandas as pd
 import os
-
-# -------------------------
+from Config.paths import DATA_DIR, TRANSFORMED_CSV, KPI_CSV,LOG_DIR, KPI_LOG
 # Logging
-# -------------------------
-LOG_DIR = "logs"
-os.makedirs(LOG_DIR, exist_ok=True)
+
+
+LOG_DIR.mkdir(exist_ok=True, parents=True)
+
+file_handler = logging.FileHandler(KPI_LOG)
 
 logger = logging.getLogger("movie_kpis")
 logger.setLevel(logging.INFO)
@@ -15,12 +16,15 @@ log_file = os.path.join(LOG_DIR, "kpi_movies.log")
 
 # Prevent duplicate handlers
 if not logger.handlers:
-    file_handler = logging.FileHandler(log_file)
-    formatter = logging.Formatter(
+     file_handler = logging.FileHandler(
+    log_file,
+    encoding="utf-8"
+       )
+     formatter = logging.Formatter(
         "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
     )
-    file_handler.setFormatter(formatter)
-    logger.addHandler(file_handler)
+     file_handler.setFormatter(formatter)
+     logger.addHandler(file_handler)
 
 # Prevent logs going to root logger / console
 logger.propagate = False
@@ -43,13 +47,13 @@ KPI_DEFINITIONS = {
         "column": "profit_musd",
         "agg": "min"
     },
-    "Highest ROI (Budget ≥10M)": {
+    "Highest ROI (Budget >= 10M)": {
         "column": "roi",
         "agg": "max",
         "filter_col": "budget_musd_num",
         "filter_val": 10
     },
-    "Lowest ROI (Budget ≥10M)": {
+    "Lowest ROI (Budget >= 10M)": {
         "column": "roi",
         "agg": "min",
         "filter_col": "budget_musd_num",
@@ -59,13 +63,13 @@ KPI_DEFINITIONS = {
         "column": "vote_count",
         "agg": "max"
     },
-    "Highest Rated (Votes ≥10)": {
+    "Highest Rated (Votes >= 10)": {
         "column": "vote_average",
         "agg": "max",
         "filter_col": "vote_count",
         "filter_val": 10
     },
-    "Lowest Rated (Votes ≥10)": {
+    "Lowest Rated (Votes >= 10)": {
         "column": "vote_average",
         "agg": "min",
         "filter_col": "vote_count",
@@ -78,9 +82,9 @@ KPI_DEFINITIONS = {
 }
 
 def get_movie_kpi(df: pd.DataFrame, kpi_name: str) -> pd.DataFrame:
-    """
-    Compute a single movie KPI and return the result as a DataFrame.
-    """
+
+    #Compute a single movie KPI and return the result as a DataFrame.
+
 
     logger.info(f"Computing KPI: {kpi_name}")
 
@@ -139,9 +143,7 @@ def get_movie_kpi(df: pd.DataFrame, kpi_name: str) -> pd.DataFrame:
 
 
 def compute_all_kpis(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Compute all defined KPIs and return as a single DataFrame.
-    """
+   
     logger.info(f"Computing all KPIs for {len(df)} movies")
     
     results = []
@@ -161,16 +163,16 @@ def compute_all_kpis(df: pd.DataFrame) -> pd.DataFrame:
         return pd.DataFrame()
 
 
-# -------------------------
+
 # Main Execution
-# -------------------------
+
 if __name__ == "__main__":
     # Load transformed movie data
     try:
-        movies_df = pd.read_csv("movies_transformed.csv")
-        logger.info(f"Loaded {len(movies_df)} movies from movies_transformed.csv")
+      movies_df = pd.read_csv(TRANSFORMED_CSV)
+      logger.info(f"Loaded {len(movies_df)} movies from movies_transformed.csv")
     except FileNotFoundError:
-        logger.error("movies_transformed.csv not found. Run transform.py first.")
+        logger.error("Transformed csv not found. Run transform.py first.")
         exit(1)
     
     # Compute all KPIs
@@ -178,7 +180,8 @@ if __name__ == "__main__":
     
     if not kpi_results.empty:
         # Save KPI results
-        kpi_results.to_csv("movie_kpis.csv", index=False)
+        kpi_results.to_csv(KPI_CSV, index=False)
+
         logger.info("KPI results saved to movie_kpis.csv")
         
     else:

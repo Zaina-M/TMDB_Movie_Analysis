@@ -1,1 +1,14 @@
 2026-01-13 16:58:42,852 | INFO | Logger initialized successfully
+2026-01-13 17:00:39,481 | INFO | Plotting Revenue vs Budget (Franchise vs Standalone)
+2026-01-13 17:01:26,933 | INFO | Preparing analytics columns
+2026-01-13 17:01:26,953 | INFO | Analytics preparation completed
+2026-01-13 17:01:26,953 | INFO | Starting visualization pipeline
+2026-01-13 17:01:26,954 | INFO | Preparing analytics columns
+2026-01-13 17:01:26,966 | INFO | Analytics preparation completed
+2026-01-13 17:01:26,967 | INFO | Plotting Revenue vs Budget (Franchise vs Standalone)
+2026-01-13 17:01:27,437 | INFO | Plotting Average ROI by Genre
+2026-01-13 17:01:27,669 | INFO | Plotting Popularity vs Rating
+2026-01-13 17:01:27,986 | INFO | Plotting Yearly Revenue Trend
+2026-01-13 17:01:28,263 | INFO | Plotting Franchise vs Standalone (Multiple Metrics)
+2026-01-13 17:01:29,131 | INFO | All visualizations completed
+2026-01-13 17:02:24,977 | INFO | Plotting Revenue vs Budget (Franchise vs Standalone)

@@ -26,3 +26,87 @@
 2026-01-13 16:46:09,471 | INFO | movie_kpis | KPI 'Most Popular' result: Avatar (70.1711)
 2026-01-13 16:46:09,472 | INFO | movie_kpis | Computed 10 KPIs successfully
 2026-01-13 16:46:09,477 | INFO | movie_kpis | KPI results saved to movie_kpis.csv
+2026-01-13 16:58:35,467 | INFO | movie_kpis | Computing all KPIs for 18 movies
+2026-01-13 16:58:35,467 | INFO | movie_kpis | Computing KPI: Highest Revenue
+2026-01-13 16:58:35,469 | INFO | movie_kpis | KPI 'Highest Revenue' result: Avatar (2923.706026)
+2026-01-13 16:58:35,470 | INFO | movie_kpis | Computing KPI: Highest Budget
+2026-01-13 16:58:35,471 | INFO | movie_kpis | KPI 'Highest Budget' result: Avengers: Endgame (356.0)
+2026-01-13 16:58:35,471 | INFO | movie_kpis | Computing KPI: Highest Profit
+2026-01-13 16:58:35,473 | INFO | movie_kpis | KPI 'Highest Profit' result: Avatar (2686.706026)
+2026-01-13 16:58:35,473 | INFO | movie_kpis | Computing KPI: Lowest Profit
+2026-01-13 16:58:35,475 | INFO | movie_kpis | KPI 'Lowest Profit' result: Star Wars: The Last Jedi (1032.69883)
+2026-01-13 16:58:35,475 | INFO | movie_kpis | Computing KPI: Highest ROI (Budget >= 10M)
+2026-01-13 16:58:35,477 | INFO | movie_kpis | Applied filter: budget_musd_num >= 10 (remaining rows: 18)
+2026-01-13 16:58:35,478 | INFO | movie_kpis | KPI 'Highest ROI (Budget >= 10M)' result: Avatar (11.33631234599156)
+2026-01-13 16:58:35,478 | INFO | movie_kpis | Computing KPI: Lowest ROI (Budget >= 10M)
+2026-01-13 16:58:35,479 | INFO | movie_kpis | Applied filter: budget_musd_num >= 10 (remaining rows: 18)
+2026-01-13 16:58:35,481 | INFO | movie_kpis | KPI 'Lowest ROI (Budget >= 10M)' result: Star Wars: The Last Jedi (3.4423294333333336)
+2026-01-13 16:58:35,481 | INFO | movie_kpis | Computing KPI: Most Voted
+2026-01-13 16:58:35,482 | INFO | movie_kpis | KPI 'Most Voted' result: The Avengers (35023)
+2026-01-13 16:58:35,482 | INFO | movie_kpis | Computing KPI: Highest Rated (Votes >= 10)
+2026-01-13 16:58:35,483 | INFO | movie_kpis | Applied filter: vote_count >= 10 (remaining rows: 18)
+2026-01-13 16:58:35,484 | INFO | movie_kpis | KPI 'Highest Rated (Votes >= 10)' result: Avengers: Endgame (8.238)
+2026-01-13 16:58:35,485 | INFO | movie_kpis | Computing KPI: Lowest Rated (Votes >= 10)
+2026-01-13 16:58:35,485 | INFO | movie_kpis | Applied filter: vote_count >= 10 (remaining rows: 18)
+2026-01-13 16:58:35,487 | INFO | movie_kpis | KPI 'Lowest Rated (Votes >= 10)' result: Jurassic World: Fallen Kingdom (6.536)
+2026-01-13 16:58:35,487 | INFO | movie_kpis | Computing KPI: Most Popular
+2026-01-13 16:58:35,489 | INFO | movie_kpis | KPI 'Most Popular' result: Avatar (70.1711)
+2026-01-13 16:58:35,490 | INFO | movie_kpis | Computed 10 KPIs successfully
+2026-01-13 16:58:40,116 | INFO | movie_kpis | Computing KPI: Highest Revenue
+2026-01-13 16:58:40,118 | INFO | movie_kpis | KPI 'Highest Revenue' result: Avatar (2923.706026)
+2026-01-13 17:00:26,949 | INFO | movie_kpis | Computing all KPIs for 18 movies
+2026-01-13 17:00:26,949 | INFO | movie_kpis | Computing KPI: Highest Revenue
+2026-01-13 17:00:26,950 | INFO | movie_kpis | KPI 'Highest Revenue' result: Avatar (2923.706026)
+2026-01-13 17:00:26,950 | INFO | movie_kpis | Computing KPI: Highest Budget
+2026-01-13 17:00:26,952 | INFO | movie_kpis | KPI 'Highest Budget' result: Avengers: Endgame (356.0)
+2026-01-13 17:00:26,952 | INFO | movie_kpis | Computing KPI: Highest Profit
+2026-01-13 17:00:26,954 | INFO | movie_kpis | KPI 'Highest Profit' result: Avatar (2686.706026)
+2026-01-13 17:00:26,954 | INFO | movie_kpis | Computing KPI: Lowest Profit
+2026-01-13 17:00:26,955 | INFO | movie_kpis | KPI 'Lowest Profit' result: Star Wars: The Last Jedi (1032.69883)
+2026-01-13 17:00:26,956 | INFO | movie_kpis | Computing KPI: Highest ROI (Budget >= 10M)
+2026-01-13 17:00:26,957 | INFO | movie_kpis | Applied filter: budget_musd_num >= 10 (remaining rows: 18)
+2026-01-13 17:00:26,960 | INFO | movie_kpis | KPI 'Highest ROI (Budget >= 10M)' result: Avatar (11.33631234599156)
+2026-01-13 17:00:26,960 | INFO | movie_kpis | Computing KPI: Lowest ROI (Budget >= 10M)
+2026-01-13 17:00:26,961 | INFO | movie_kpis | Applied filter: budget_musd_num >= 10 (remaining rows: 18)
+2026-01-13 17:00:26,962 | INFO | movie_kpis | KPI 'Lowest ROI (Budget >= 10M)' result: Star Wars: The Last Jedi (3.4423294333333336)
+2026-01-13 17:00:26,962 | INFO | movie_kpis | Computing KPI: Most Voted
+2026-01-13 17:00:26,964 | INFO | movie_kpis | KPI 'Most Voted' result: The Avengers (35023)
+2026-01-13 17:00:26,964 | INFO | movie_kpis | Computing KPI: Highest Rated (Votes >= 10)
+2026-01-13 17:00:26,965 | INFO | movie_kpis | Applied filter: vote_count >= 10 (remaining rows: 18)
+2026-01-13 17:00:26,966 | INFO | movie_kpis | KPI 'Highest Rated (Votes >= 10)' result: Avengers: Endgame (8.238)
+2026-01-13 17:00:26,966 | INFO | movie_kpis | Computing KPI: Lowest Rated (Votes >= 10)
+2026-01-13 17:00:26,967 | INFO | movie_kpis | Applied filter: vote_count >= 10 (remaining rows: 18)
+2026-01-13 17:00:26,968 | INFO | movie_kpis | KPI 'Lowest Rated (Votes >= 10)' result: Jurassic World: Fallen Kingdom (6.536)
+2026-01-13 17:00:26,969 | INFO | movie_kpis | Computing KPI: Most Popular
+2026-01-13 17:00:26,970 | INFO | movie_kpis | KPI 'Most Popular' result: Avatar (70.1711)
+2026-01-13 17:00:26,971 | INFO | movie_kpis | Computed 10 KPIs successfully
+2026-01-13 17:00:29,450 | INFO | movie_kpis | Computing KPI: Highest Revenue
+2026-01-13 17:00:29,452 | INFO | movie_kpis | KPI 'Highest Revenue' result: Avatar (2923.706026)
+2026-01-13 17:01:21,057 | INFO | movie_kpis | Computing all KPIs for 18 movies
+2026-01-13 17:01:21,057 | INFO | movie_kpis | Computing KPI: Highest Revenue
+2026-01-13 17:01:21,059 | INFO | movie_kpis | KPI 'Highest Revenue' result: Avatar (2923.706026)
+2026-01-13 17:01:21,059 | INFO | movie_kpis | Computing KPI: Highest Budget
+2026-01-13 17:01:21,060 | INFO | movie_kpis | KPI 'Highest Budget' result: Avengers: Endgame (356.0)
+2026-01-13 17:01:21,061 | INFO | movie_kpis | Computing KPI: Highest Profit
+2026-01-13 17:01:21,062 | INFO | movie_kpis | KPI 'Highest Profit' result: Avatar (2686.706026)
+2026-01-13 17:01:21,062 | INFO | movie_kpis | Computing KPI: Lowest Profit
+2026-01-13 17:01:21,063 | INFO | movie_kpis | KPI 'Lowest Profit' result: Star Wars: The Last Jedi (1032.69883)
+2026-01-13 17:01:21,063 | INFO | movie_kpis | Computing KPI: Highest ROI (Budget >= 10M)
+2026-01-13 17:01:21,064 | INFO | movie_kpis | Applied filter: budget_musd_num >= 10 (remaining rows: 18)
+2026-01-13 17:01:21,065 | INFO | movie_kpis | KPI 'Highest ROI (Budget >= 10M)' result: Avatar (11.33631234599156)
+2026-01-13 17:01:21,065 | INFO | movie_kpis | Computing KPI: Lowest ROI (Budget >= 10M)
+2026-01-13 17:01:21,066 | INFO | movie_kpis | Applied filter: budget_musd_num >= 10 (remaining rows: 18)
+2026-01-13 17:01:21,067 | INFO | movie_kpis | KPI 'Lowest ROI (Budget >= 10M)' result: Star Wars: The Last Jedi (3.4423294333333336)
+2026-01-13 17:01:21,068 | INFO | movie_kpis | Computing KPI: Most Voted
+2026-01-13 17:01:21,069 | INFO | movie_kpis | KPI 'Most Voted' result: The Avengers (35023)
+2026-01-13 17:01:21,069 | INFO | movie_kpis | Computing KPI: Highest Rated (Votes >= 10)
+2026-01-13 17:01:21,070 | INFO | movie_kpis | Applied filter: vote_count >= 10 (remaining rows: 18)
+2026-01-13 17:01:21,072 | INFO | movie_kpis | KPI 'Highest Rated (Votes >= 10)' result: Avengers: Endgame (8.238)
+2026-01-13 17:01:21,072 | INFO | movie_kpis | Computing KPI: Lowest Rated (Votes >= 10)
+2026-01-13 17:01:21,073 | INFO | movie_kpis | Applied filter: vote_count >= 10 (remaining rows: 18)
+2026-01-13 17:01:21,074 | INFO | movie_kpis | KPI 'Lowest Rated (Votes >= 10)' result: Jurassic World: Fallen Kingdom (6.536)
+2026-01-13 17:01:21,075 | INFO | movie_kpis | Computing KPI: Most Popular
+2026-01-13 17:01:21,076 | INFO | movie_kpis | KPI 'Most Popular' result: Avatar (70.1711)
+2026-01-13 17:01:21,077 | INFO | movie_kpis | Computed 10 KPIs successfully
+2026-01-13 17:01:23,150 | INFO | movie_kpis | Computing KPI: Highest Revenue
+2026-01-13 17:01:23,152 | INFO | movie_kpis | KPI 'Highest Revenue' result: Avatar (2923.706026)
